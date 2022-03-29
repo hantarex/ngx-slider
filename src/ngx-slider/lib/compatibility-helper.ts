@@ -7,7 +7,7 @@ declare class ResizeObserver {
 export class CompatibilityHelper {
   /** Workaround for TouchEvent constructor sadly not being available on all browsers (e.g. Firefox, Safari) */
   public static isTouchEvent(event: any): boolean {
-    if ((window as any).TouchEvent !== undefined) {
+    if (typeof window !== "undefined" && (window as any).TouchEvent !== undefined) {
       return event instanceof TouchEvent;
     }
 
@@ -16,6 +16,6 @@ export class CompatibilityHelper {
 
   /** Detect presence of ResizeObserver API */
   public static isResizeObserverAvailable(): boolean {
-    return (window as any).ResizeObserver !== undefined;
+    return typeof window !== "undefined" && (window as any).ResizeObserver !== undefined;
   }
 }
