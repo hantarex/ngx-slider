@@ -1,5 +1,5 @@
 {
-  "name": "@angular-slider/ngx-slider",
+  "name": "@hantarex/ngx-slider",
   "version": "2.0.4",
   "private": true,
   "description": "Self-contained, mobile friendly slider component for Angular 5+ based on angularjs-slider",
@@ -15,12 +15,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/angular-slider/ngx-slider.git"
+    "url": "git+https://github.com/hantarex/ngx-slider.git"
   },
   "bugs": {
-    "url": "https://github.com/angular-slider/ngx-slider/issues"
+    "url": "https://github.com/hantarex/ngx-slider/issues"
   },
-  "homepage": "https://github.com/angular-slider/ngx-slider#readme",
+  "homepage": "https://github.com/hantarex/ngx-slider#readme",
   "scripts": {
     "prepare": "npm run prepare:lib && npm run prepare:demo-app",
     "prepare:lib": "node scripts/generate-lib-files.js",
@@ -83,5 +83,9 @@
     "typedoc": "^0.15.8",
     "typescript": "^2.7.0",
     "webdriver-manager": "^12.1.7"
+  },
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
   }
 }

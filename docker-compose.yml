@@ -1,0 +1,9 @@
+version: "3"
+services:
+  ngx-slider:
+    restart: always
+    image: node:14.6
+    container_name: ngx-slider
+    command: /bin/bash -c "tail -f /dev/null"
+    volumes:
+      - ./:/application/
